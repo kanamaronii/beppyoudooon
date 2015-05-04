@@ -1,0 +1,8 @@
+<h1>キーワードを入れる</h1>
+<%= form_tag '/appendix/result', :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "検索", :name => nil %>
+  </p>
+<% end %>
+<h2>出てこなかったらごめんね</h2>
